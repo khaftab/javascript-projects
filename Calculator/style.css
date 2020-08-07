@@ -1,0 +1,107 @@
+body {
+  background-color: #f3f3f3;
+}
+
+.container {
+  width: 400px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  background-color: #fff;
+}
+
+.display {
+  grid-column: 1 / 5;
+  background-color: rgba(0, 0, 0, 0.767);
+}
+
+.grid-container button {
+  border: none;
+  font-size: 19px;
+  background-color: rgb(255, 255, 255);
+  font-weight: 650;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  /* transform: scale(0.79); */
+  background-color: #f3f3f3;
+}
+
+.grid-container button:hover {
+  border: none;
+  outline: none;
+}
+
+.grey-bg {
+  margin: 12px;
+  background-color: rgb(232, 233, 233) !important;
+  border-radius: 50%;
+}
+
+/*Button background styling*/
+
+.division {
+  margin: 12px;
+  background-color: rgb(84, 185, 167) !important;
+  border-radius: 50%;
+}
+.mult {
+  margin: 12px;
+  background-color: rgb(228, 214, 22) !important;
+  border-radius: 50%;
+}
+.minus {
+  margin: 12px;
+  background-color: rgb(204, 102, 119) !important;
+  border-radius: 50%;
+}
+.addition {
+  margin: 12px;
+  background-color: rgb(98, 145, 199) !important;
+  border-radius: 50%;
+}
+.equal {
+  margin: 12px;
+  background-color: rgb(144, 107, 212) !important;
+  border-radius: 50%;
+}
+
+.grid-container button:nth-child(18) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.grid-container button:nth-child(19) {
+  grid-column: 2 / 4;
+}
+
+.display {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  align-items: flex-end;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.display .top-display {
+  color: rgb(235, 233, 233);
+  font-size: 23px;
+}
+
+.display .bottom-display {
+  color: rgb(255, 255, 255);
+  font-size: 29px;
+}
+
+
